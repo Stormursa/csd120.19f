@@ -8,5 +8,6 @@ a {
 li a {
     color: #CCACBF;}
 .byline {
-    opacity: 0.5;}
+    color: rgba(0,0,0,0.5);
+}
 #page-copyright {background-color: #86BBD8;color: #320A28;}

@@ -21,6 +21,7 @@ li a {
     text-decoration: none;    
 }
 .byline {
+<<<<<<< HEAD
     opacity: 0.5;
     font-size: 70%;
     }
@@ -40,3 +41,8 @@ header {list-style-type: none;
         padding: 0;
 }
 ul {list-style-type: square;}
+=======
+    color: rgba(0,0,0,0.5);
+}
+#page-copyright {background-color: #86BBD8;color: #320A28;}
+>>>>>>> refs/heads/master

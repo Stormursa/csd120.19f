@@ -1,16 +1,22 @@
 
-body {background-color: #0C0920;}
-body {color: #3A606E;}
-h1 {background-color:#8E443D;color:#320A28;
+body {
+    background-color: #0C0920;
+    color: #3A606E;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    background-color:#8E443D;color:#320A28;
     background-image:url(../images/gradient.png);
     background-repeat:repeat-x;
-     font-family: "Rubik", sans-serif;
-    }
+    font-family: "Rubik", sans-serif;
+}
+
 h2 {
     background-color:#8E443D;color: #320A28;
     background-image:url(../images/gradient.png);
     background-repeat:repeat-x;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Rubik", sans-serif;
     
 } 
 a {
@@ -21,14 +27,14 @@ li a {
     text-decoration: none;    
 }
 .byline {
-<<<<<<< HEAD
-    opacity: 0.5;
+    color: rgba(0,0,0,0.5);
     font-size: 70%;
-    }
-#page-copyright {background-color: #86BBD8;color: #320A28;
-                 text-transform: uppercase;
-                 letter-spacing: 3px;
-
+}
+#page-copyright {
+    background-color: #86BBD8;
+    color: #320A28;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 .bio p {text-indent: 3em;}
 footer {
@@ -36,13 +42,9 @@ footer {
     font-size: 12px;    
 }
 
-header {list-style-type: none;
-        margin: 0;
-        padding: 0;
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 ul {list-style-type: square;}
-=======
-    color: rgba(0,0,0,0.5);
-}
-#page-copyright {background-color: #86BBD8;color: #320A28;}
->>>>>>> refs/heads/master

@@ -1,85 +1,112 @@
-
-
-h1 {background-color:#8E443D;color:#320A28;
-    background-image:radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(73,9,121,1) 18%, rgba(185,36,111,1) 100%);
-    background-repeat:repeat-x;
-     font-family: "Rubik", sans-serif;
-     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-     -webkit-background-clip: text;
-     background-clip: text;
-     -webkit-text-fill-color: transparent;
-    }
-h2 {
-    background-color:#8E443D; color: rgba(50, 10, 40, 0);
-    background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(73,9,121,1) 18%, rgba(185,36,111,1) 100%);
-    background-repeat:repeat-x;
-    font-family: "Montserrat", sans-serif;
-    
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+h1 {
+    background-color: #8E443D;
+    color: transparent;
+    background-image: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(73, 9, 121, 1) 18%, rgba(185, 36, 111, 1) 100%);
+    background-repeat: repeat-x;
+    font-family: "Rubik", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-} 
-body {background-color: 
-      #3A606E;color: #D3D3D3;
-      font-family: "Montserrat", sans-serif;
-      
 }
+
+h2 {
+    background-color: #8E443D;
+    background-image: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(73, 9, 121, 1) 18%, rgba(185, 36, 111, 1) 100%);
+    background-repeat: repeat-x;
+    font-family: "Montserrat", sans-serif;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+body {
+    background-color:
+        #3A606E;
+    color: #D3D3D3;
+    font-family: "Montserrat", sans-serif;
+}
+
 a {
     color: #55414C;
 }
+
 li a {
     color: #CCACBF;
-    text-decoration: none;    
+    text-decoration: none;
 }
-.byline {opacity: 0.5;
+
+.byline {
+    opacity: 0.5;
     font-size: 70%;
 }
-.page-copyright {background-color: #86BBD8;color: #320A28;
-                 text-transform: uppercase;
-                 letter-spacing: 3px;
 
+.page-copyright {
+    background-color: #86BBD8;
+    color: #320A28;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.bio p {text-indent: 3em;}
+
+.bio p {
+    text-indent: 3em;
+}
+
 footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
 }
 
-header {list-style-type: none;
-        margin: 0;
-        
+header {
+    list-style-type: none;
 }
-header .ul {padding: 0;}
-ul {list-style-type: square;
-    color: rgba(0,0,0,0.5);
-    
-}
-.page-copyright {background-color: #86BBD8;color: #320A28;}
-body .width-wrap {max-width: 1024px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 80% ;
-                    padding-left: 2em;
-                    padding-right: 2em;
-                    margin-bottom: 3em;
-                    border-left: 1px solid rgba(0,0,0,0.3);
-                    border-right: 1px solid rgba(0,0,0,0.3);
-                    border-bottom: 1px solid rgba(0,0,0,0.3);
-                    background-color: #789DAB;
-                    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);}
-figure img {box-shadow: 2px 2px 3px rgba(0,0,0,0.5);}
 
-footer hr {width: 50% ;
+header ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: square;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.page-copyright {
+    background-color: #86BBD8;
+    color: #320A28;
+}
+
+body .width-wrap {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 3em;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #789DAB;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer hr {
+    width: 50vw;
     min-width: 300px;
     margin-top: 3em;
     margin-bottom: 2em;
-    border-top: 3px solid rgba(94,19,75,1);
-    border-bottom: 8px dotted rgba(94,19,75,1);
-    border-top-left-radius: 8px ;
+    border-top: 3px solid rgba(94, 19, 75, 1);
+    border-bottom: 8px dotted rgba(94, 19, 75, 1);
+    border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-left: 0;
-    border-right:0;
+    border-right: 0;
 
 }

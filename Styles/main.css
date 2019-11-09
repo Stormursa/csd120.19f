@@ -57,18 +57,21 @@ footer {
     margin-bottom: 2em;
 }
 header {
-    float: right;
-    border: 4px solid rgba(0,0,0,0.1);
+    border-top: 4px solid rgba(0,0,0,0.1);
     margin-left: -2em;
     margin-right: -2em;
+}
+header nav {
+    overflow: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -4px;
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
 }
 header nav ul{
     float: right;
     padding: 0;
     margin: 0;
-    margin-left: 2em;
-    margin-right: 2em;
-    border-bottom: 1px dotted rgba(0,0,0,0.3);
     border-top: 4px top #3A606E;
 
 }
@@ -77,6 +80,8 @@ header ul li{
     padding: 0;
     list-style-type: none;
     margin: 0;
+}
+header ul li a {
     padding-top: 1em;
     padding-bottom: 0.5em;
     margin-right: 1em;
@@ -84,9 +89,8 @@ header ul li{
     display: block;
     border: 4px solid transparent;
     text-align: center;
-    
-    }
-header li:hover {
+}
+header li a:hover {
     border-top: 4px solid #8E443D;
     
 }
@@ -136,7 +140,7 @@ footer hr {
 }
 .paperclip{
     position: absolute;
-    right: 7px;
+    right: -7px;
     top: -10px;
     background-image: url(../images/paperclip.png);
     width: 50px;
@@ -146,12 +150,12 @@ footer hr {
 .Favouritethings {
     clear: right; 
     }
-.body-to-top {
+.back-to-top {
     text-align: right;
     margin-right: -0.5em;
     opacity: 0.5;
 }
-.body-to-top a {
+.back-to-top a {
     position: fixed;
     bottom: 3.5em;
     }

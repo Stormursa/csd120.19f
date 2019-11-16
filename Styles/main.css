@@ -25,7 +25,11 @@ h2 {
 body {
     background-color: #3A606E;
     color: #D3D3D3;
-    font-family: "Montserrat", sans-serif;   
+    font-family: "Montserrat", sans-serif;
+    min-height: 100%vh;
+    display: flex;
+    
+    
 }
 
 a {
@@ -49,7 +53,10 @@ li a {
 }
 
 .bio p {
-    text-indent: 3em}
+    text-indent: 3em;
+    flex-direction: row;
+
+    }
 
 footer {
     text-align: center;
@@ -57,23 +64,27 @@ footer {
     margin-bottom: 2em;
 }
 header {
-    float: right;
-    border: 4px solid rgba(0,0,0,0.1);
+    border-top: 4px solid rgba(0,0,0,0.1);
     margin-left: -2em;
     margin-right: -2em;
 }
-header nav ul{
-    float: right;
-    padding: 0;
-    margin: 0;
+header nav {
+    overflow: auto;
     margin-left: 2em;
     margin-right: 2em;
     border-bottom: 1px dotted rgba(0,0,0,0.3);
+    margin-top: -4px;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
     border-top: 4px top #3A606E;
+    list-style-type: none;
 
 }
-header ul li{
-    float: left;
+header ul li a {
     padding: 0;
     list-style-type: none;
     margin: 0;
@@ -86,7 +97,7 @@ header ul li{
     text-align: center;
     
     }
-header li:hover {
+header li a:hover {
     border-top: 4px solid #8E443D;
     
 }
@@ -100,7 +111,7 @@ ul {
     color: #320A28;
     }
     
-body .width-wrap {
+.width-wrap {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -113,6 +124,9 @@ body .width-wrap {
     border-bottom: 1px solid rgba(0,0,0,0.3);
     background-color: #789DAB;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    
     }
     
 figure {
@@ -134,9 +148,12 @@ footer hr {
     border-left: 0;
     border-right: 0;
 }
+footer {
+    margin-top: auto
+}
 .paperclip{
     position: absolute;
-    right: 7px;
+    right: -7px;
     top: -10px;
     background-image: url(../images/paperclip.png);
     width: 50px;
@@ -146,15 +163,52 @@ footer hr {
 .Favouritethings {
     clear: right; 
     }
-.body-to-top {
+.back-to-top {
     text-align: right;
     margin-right: -0.5em;
     opacity: 0.5;
 }
-.body-to-top a {
+.back-top a {
     position: fixed;
     bottom: 3.5em;
     }
 .back-to-top:hover {
     opacity: 1;
+}
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2em;
+    
+}
+.bio {
+    grid-column: span 2;
+    grid-row: 1; 
+    
+}
+.glossary {
+    grid-column: 1 /span 2;
+
+}
+.links {
+    grid-column: 1 / span 2; 
+}
+.gallary {
+    grid-column: span 2;
+    width: 100%;
+}
+.gallary-thumbnails {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  
+}
+.gallary img {
+    
+    
+}
+.row-span-2 {
+    grid-rows: span 2;
+}
+.row-span-2.col-span-2 {
+    grid-column: span 2;
 }

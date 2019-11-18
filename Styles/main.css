@@ -26,7 +26,8 @@ body {
     background-color: #3A606E;
     color: #D3D3D3;
     font-family: "Montserrat", sans-serif;
-    min-height: 100%vh;
+
+    min-height: 100vh;
     display: flex;
     
     
@@ -177,7 +178,7 @@ footer {
 }
 main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 2em;
     
 }
@@ -190,25 +191,26 @@ main {
     grid-column: 1 /span 2;
 
 }
-.links {
+#useful-links {
     grid-column: 1 / span 2; 
 }
-.gallary {
+.gallery {
     grid-column: span 2;
     width: 100%;
 }
-.gallary-thumbnails {
+.gallery-thumbnails {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
   
 }
-.gallary img {
-    
-    
+.gallery img {
+    width: 100%;
+    display: block; 
 }
+
 .row-span-2 {
-    grid-rows: span 2;
+    grid-row: span 2;
 }
-.row-span-2.col-span-2 {
+.col-span-2 {
     grid-column: span 2;
 }

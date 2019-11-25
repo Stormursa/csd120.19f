@@ -211,7 +211,7 @@ main {
 .col-span-2 {
     grid-column: span 2;
 }
-.responsive {
+img {
     max-width: 100%;
     height: auto;
 }

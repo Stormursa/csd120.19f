@@ -211,7 +211,18 @@ main {
 .col-span-2 {
     grid-column: span 2;
 }
-.responsive {
+.img {
     max-width: 100%;
     height: auto;
+}
+.courses {
+    border-right: 3px solid #789DAB;
+    border-left: 3px solid #789DAB;
+    background: black;
+    opacity: 0.5;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
+   
 }

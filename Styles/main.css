@@ -200,10 +200,6 @@ main {
 .gallary-thumbnails {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-  
-}
-.gallary img {
-    
 }
 .row-span-2 {
     grid-row: span 2;
@@ -215,14 +211,37 @@ main {
     max-width: 100%;
     height: auto;
 }
-.courses {
-    border-right: 3px solid #789DAB;
-    border-left: 3px solid #789DAB;
-    background: black;
-    opacity: 0.5;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    padding-right: 1em;
-    padding-left: 1em;
-   
+.courses table{
+     border-right: 3px solid #789DAB;
+     border-left: 3px solid #789DAB;
+     background:  #789DAB;
+     opacity: 0.5;
+     padding-top: 0.3em;
+     padding-bottom: 0.3em;
+     padding-right: 1em;
+     padding-left: 1em;
+     color: black
 }
+ th {
+     background-color: hsl(0,0%,90%);
+}
+tr:nth-child(odd) {
+    background: hsl(0,0%,90%);
+}
+tr:nth-child(even) {
+    background: hsl(0,0%,76%);
+}
+.courses #fall{
+    background: hsl(0,0%,90%);
+}
+tr:nth-child(2){
+         border-top: 3px solid #789DAB;
+}
+tr:nth-child(7) {
+    border-top: 3px solid #789DAB;
+}
+
+.survey {
+    grid-column: span 2;
+}
+ 

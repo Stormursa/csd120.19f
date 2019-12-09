@@ -1,4 +1,4 @@
-* {box-sizing: border-box;}
+*{box-sizing: border-box;}
 
 h1 {
     background-color:#8E443D;
@@ -240,8 +240,29 @@ tr:nth-child(2){
 tr:nth-child(7) {
     border-top: 3px solid #789DAB;
 }
-
+form{
+    display: grid;
+}
 .survey {
     grid-column: span 2;
 }
- 
+.survey labels {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+#send {
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    background: #320A28;
+    border: 1px solid #55414C;
+    color:#8E443D;
+}
+#burger-toggle {
+    position: absolute;
+    display: none;
+}

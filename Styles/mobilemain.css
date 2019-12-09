@@ -74,11 +74,11 @@
         visibility: hidden;
     }
     #burger-toggle:checked ~ .burger {
-
-        transform: rotate(45deg) translate(15px, 5px);
+        transition-timing-function: ease-in-out;
+        transform: rotate(45deg) translate(10px, 20px);
     }
     #burger-toggle:checked ~ .burger::after{
-        transform: rotate(-90deg) translate(5px,10px);
+        transform: rotate(-90deg) translate(10px,0px);
 
     }
 }

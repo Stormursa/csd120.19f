@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Styles/normalize.css">
         <link rel="stylesheet" href="Styles/main.css">
+        <script src="Light/baguetteBox.js"></script>
+        <link rel="stylesheet" href="Styles/baguetteBox.css">
         <link rel="stylesheet" href="Styles/mobilemain.css" media="screen and (max-width:768px)">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,7 +18,7 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat%7CRubik&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Montserrat%7CRubik&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,24 +33,24 @@
                     <li><a href="Glossary.html">Glossary</a></li>
                 <li><a href="Links.html">Links</a></li>
             </ul>
-            
+
         </nav>
 </header>
 
     <main>
         <section class="bio">
             <h1>Welcome to Alison's CSD120 Website!</h1>
-                        <figure class="mugshot"> 
+                        <figure class="mugshot">
                                  <div class="paperclip"></div>
                                  <a href="images/image.png" target="_blank"><img src="images/Mugshot_Thumbnail.png" alt="Mugshot"></a>
                             <figcaption>
                             Class picture
                             </figcaption>
                        </figure>
-                    <p> 
-        My name is Alison Nadjiwon. I was raised on the Cape Croker First Nation. 
-        I found my passion in writing and drawing at an early age, 
-        this interest still continueing into the present day. 
+                    <p>
+        My name is Alison Nadjiwon. I was raised on the Cape Croker First Nation.
+        I found my passion in writing and drawing at an early age,
+        this interest still continueing into the present day.
     I have yet to publish any books yet but hope to in the future. Computer programming has always intersted me so when I was choosing what I wanted to do with my life I stepped into it. I plan to continue working on my shills and find a job within the industry.
         The Idea that I could build my own programs, own games or software is real reason I wanted to learn code. I love creating things and I see programming as just another way to do that.
                      </p>
@@ -64,9 +66,9 @@
             </ol>
         </section>
         <section>
-            
+
             <h2>Haiku</h2>
-             
+
                 <p>
                  <span style="color:black;background-color:#86BBD8;">
                 <br>On this road
@@ -83,7 +85,7 @@
                  </span>
 
                 </p>
-            
+
         </section>
         <section class="courses">
             <h2>My Sault College Courses</h2>
@@ -137,7 +139,7 @@
                     </tr>
                 </table>
         </section>
-        <section class="gallary">   
+        <section class="gallary">
             <h2>Photo Gallary</h2>
             <div class="gallary=thumbnails">
                 <a class="row-span-2" href="https://picsum.photos/id/10/1024"><img src="https://picsum.photos/id/10/300/600" alt="Placeholder Image"></a>
@@ -155,7 +157,7 @@
                 <a href="https://picsum.photos/id/234/1024"><img src="https://picsum.photos/id/234/300" alt="Placeholder Image" class="responsive"></a>
                 <a href="https://picsum.photos/id/567/1024"><img src="https://picsum.photos/id/567/300" alt="Placeholder Image" class="responsive"></a>
                 <a href="https://picsum.photos/id//1024"><img src="https://picsum.photos/id/891/300" alt="Placeholder Image" class="responsive"></a>
-                
+
             </div>
         </section>
         <section class="survey">
@@ -209,5 +211,11 @@
     </footer>
     <div class="back-to-top"><a href="#top">◤</a></div>
     </div>
+    <script>
+        baguetteBox.run('.gallery-thumbnails', {
+        filter: /picsum\.photos\/id/i
+        });
+    </script>
+
 </body>
 </html>

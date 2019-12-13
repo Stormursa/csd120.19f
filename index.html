@@ -89,7 +89,7 @@
         </section>
         <section class="courses">
             <h2>My Sault College Courses</h2>
-                <table border="0">
+                <table>
                     <tr>
                         <th>Term</th>
                         <th>Code</th>
@@ -162,41 +162,35 @@
         </section>
         <section class="survey">
             <h2>Survey</h2>
-                <form>
-                    What is your name? <input type="text" name="name_feild" id="name">
-                    <br></br>
-                    What is your email? <input type="text" name="email_feild" id="email">
-                    <br></br>
-                    Which integer is best <input type="number" name="best_integer" id="integer">
-                    <br></br>
-                    Which day is best? <input type="text" name="best_day" id="day">
-                    <br></br>
-                    Which bear is best? <select name="best_bear">
-                                            <option value="Blank">  </option>
-                                            <option value="Brown">brown</option>
-                                            <option value="Black">black</option>
-                                            <option value="Care">care</option>
-                                            <option value="Panda">panda</option>
-                                            <option value="Polar">polar</option>
-                                            <option value="Teddy">teddy</option>
-                                        </select>
-                    <br></br>
-                    Do you like radio buttons? <label id="radio">
-                    <br></br>
-                    <label>
-                        <input type="radio" name="rad" value="Yes" id="radio">Yes
-                        <br></br>
-                        <input type="radio" name="rad"value="No" id="radio">No
-                        <br></br>
-                        <input type="radio" name="rad"value="?" id="radio" checked="true"> None of your business
-                    </label>
-                    <br></br>
-                    What is the meaning of life?<label>
-                    <br></br>
-                    <textarea name="life_meaning" rows="10">
-                    Enter the correct answer here
-                    </textarea>
-                    <br></br>
+                <form method="POST" action="?">
+                    <label for="name">What is your name?</label>
+                    <input type="text" name="name_field" id="name" required>
+                    
+                    <label for="email">What is your email?</label>
+                    <input type="email" name="email_field" id="email" required>
+                    
+                    <label for="integer">Which integer is best</label>
+                    <input type="number" name="best_integer" id="integer">
+                    
+                    <label for="day">Which day is best?</label>
+                    <input type="date" name="best_day" id="day">
+                    <label for="bear">Which bear is best?</label>
+                    <select name="best_bear" id="bear">
+                        <option value="Blank">  </option>
+                        <option value="Brown">brown</option>
+                        <option value="Black">black</option>
+                        <option value="Care">care</option>
+                        <option value="Panda">panda</option>
+                        <option value="Polar">polar</option>
+                        <option value="Teddy">teddy</option>
+                    </select>
+
+                    <label>Do you like radio buttons?</label> 
+                    <label><input type="radio" name="rad" value="yes">Yes</label>
+                    <label><input type="radio" name="rad" value="no">No</label>
+                    <label><input type="radio" name="rad" value="?" checked="true"> None of your business</label>
+                    <label for="life">What is the meaning of life?</label>
+                    <textarea name="life_meaning" rows="10" id="life" placeholder="Enter the correct answer here"></textarea>
                     <input type="submit" value="Send" id="send">
                 </form>
         </section>

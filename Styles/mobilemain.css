@@ -63,8 +63,8 @@
         width: 40px;
         border-top: 5px solid #3A606E;
     }
-    .burger::after, .burger::before {
-        transition-timing-function: ease-in-out;
+    .burger, .burger::after, .burger::before {
+        transition: all 200ms ease-in-out;
     }
     .burger::after{
         top:5px;

@@ -212,27 +212,30 @@ main {
     height: auto;
 }
 .courses table{
+    border-collapse: collapse;
+}
+
+.courses table td,
+.courses table th {
      border-right: 3px solid #789DAB;
      border-left: 3px solid #789DAB;
-     background:  #789DAB;
-     opacity: 0.5;
      padding-top: 0.3em;
      padding-bottom: 0.3em;
      padding-right: 1em;
      padding-left: 1em;
      color: black
 }
- th {
-     background-color: hsl(0,0%,90%);
+th {
+     background-color: hsla(0,0%,0%,0.1);
 }
-tr:nth-child(odd) {
-    background: hsl(0,0%,90%);
+tr:nth-child(even) td {
+    background: hsla(0,0%,0%, 0.05);
 }
-tr:nth-child(even) {
-    background: hsl(0,0%,76%);
+tr:nth-child(odd) td {
+    background: hsl(0,0%,0%, 0.1);
 }
 .courses #fall{
-    background: hsl(0,0%,90%);
+    background: hsla(0,0%,0%, 0.1);
 }
 tr:nth-child(2){
          border-top: 3px solid #789DAB;
@@ -246,7 +249,7 @@ form{
 .survey {
     grid-column: span 2;
 }
-.survey labels {
+.survey label {
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
